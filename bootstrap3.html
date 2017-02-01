@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrapの基本テンプレート</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    </head>
+    
+
+
+	<body>
+        <nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarEexample5">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				タイトル
+			</a>
+		</div>
+		
+		<div class="collapse navbar-collapse" id="navbarEexample5">
+			<ul class="nav navbar-nav">
+				<li><a href="#">メニューＡ</a></li>
+				<li class="active"><a href="#">メニューＢ</a></li>
+				<li><a href="#">メニューＣ</a></li>
+			</ul>
+			<p class="navbar-text">ようこそ ゲスト さん。</p>
+		</div>
+	</div>
+            	<h1>サンプル　　<small>サブ・テキスト</small></h1>
+</div>
+	
+</nav>
+
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>順位</th>
+			<th>名前</th>
+			<th>惑星</th>
+			<th>勝点</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>1</th>
+			<td>ブルーＳＣ</td>
+			<td>地球</td>
+			<td>101</td>
+		</tr>
+		<tr>
+			<th>2</th>
+			<td>ＦＣウェヌス</td>
+			<td>金星</td>
+			<td>83</td>
+		</tr>
+		<tr>
+			<th>3</th>
+			<td>ジュピターＦＣ</td>
+			<td>木星</td>
+			<td>68</td>
+		</tr>
+		<tr>
+			<th>4</th>
+			<td>ＳＣマーキュリー</td>
+			<td>水星</td>
+			<td>67</td>
+		</tr>
+		<tr>
+			<th>5</th>
+			<td>ＦＣマルス</td>
+			<td>火星</td>
+			<td>65</td>
+		</tr>
+	</tbody>
+</table>
+<div class="your-class">
+  <div>コンテンツ1</div>
+  <div>コンテンツ2</div>
+  <div>コンテンツ3</div>
+</div>
+    
+
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sampleModal">
+	モーダル・ダイアログ 呼び出し
+</button>
+
+<!-- モーダル・ダイアログ -->
+<div class="modal fade" id="sampleModal" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+				<h4 class="modal-title">タイトル</h4>
+			</div>
+			<div class="modal-body">
+				本文
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+				<button type="button" class="btn btn-primary target">ボタン</button>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+	
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script>
+            
+        
+        $(function(){
+            $('h1').hide();
+        });
+        
+$(function(){
+   $('.your-class').slick({
+       dots:true,
+       fade:true
+});
+
+ $(function() {
+    $('.target').click(function(){
+        $('.modal').hide();
+    });
+});
+            $('.nav li').mouseover(function(){
+            $('.nav li')removeClass('active');
+                           $(this) .addClass('active');
+            });
+            });
+            
+
+        </script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+	</body>
+</html>
